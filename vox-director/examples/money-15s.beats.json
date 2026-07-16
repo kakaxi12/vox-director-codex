@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "project": {
+    "title": "A Brief History of Money",
+    "topic": "How money changed",
+    "language": "en",
+    "aspect": "16:9",
+    "fps": 30,
+    "target_duration": 15,
+    "motion_backend": "hyperframes",
+    "image_backend": "codex-imagegen",
+    "audio_backend": "minimax"
+  },
+  "visual": {
+    "preset": "american-retro",
+    "density": "rich",
+    "style_prompt": "Layered editorial paper collage, warm newsprint, ink black, currency green and vermilion accents, torn edges, halftone and tactile shadows."
+  },
+  "beats": [
+    {
+      "id": "b01",
+      "duration": 5,
+      "purpose": "hook",
+      "narration": "Before coins, value came in every shape imaginable.",
+      "headline": "BEFORE MONEY",
+      "visual_intent": "A dense barter market converges toward a coin-shaped void.",
+      "transition": "paper-tear-wipe",
+      "layers": [
+        {"id": "newsprint-bg", "role": "background", "asset_kind": "generated-plate", "motion": "slow-drift", "z": 0},
+        {"id": "grain", "role": "texture", "asset_kind": "css-texture", "motion": "finite-flicker", "z": 5},
+        {"id": "cow", "role": "hero-cutout", "asset_kind": "generated-cutout", "motion": "slide-left-pivot", "z": 20},
+        {"id": "grain-sack", "role": "supporting-cutout", "asset_kind": "generated-cutout", "motion": "rise-settle", "z": 24},
+        {"id": "shells", "role": "supporting-cutout", "asset_kind": "generated-cutout-group", "motion": "staggered-pop", "z": 28},
+        {"id": "tools", "role": "supporting-cutout", "asset_kind": "generated-cutout-group", "motion": "fan-out", "z": 32},
+        {"id": "coin-void", "role": "focal-mask", "asset_kind": "html-mask", "motion": "scale-reveal", "z": 40},
+        {"id": "arrows", "role": "diagram", "asset_kind": "html-svg", "motion": "draw-in", "z": 44},
+        {"id": "foreground-scraps", "role": "foreground", "asset_kind": "generated-cutout-group", "motion": "parallax-occlude", "z": 60}
+      ]
+    },
+    {
+      "id": "b02",
+      "duration": 5,
+      "purpose": "transformation",
+      "narration": "Coins made value portable. Paper made it scalable.",
+      "headline": "VALUE, PORTABLE",
+      "visual_intent": "Coins stamp into existence, then unfold into banknotes and ledgers.",
+      "transition": "ink-wipe",
+      "layers": [
+        {"id": "mint-bg", "role": "background", "asset_kind": "generated-plate", "motion": "push-in", "z": 0},
+        {"id": "coin-stack", "role": "hero-cutout", "asset_kind": "generated-cutout", "motion": "stamp-repeat-finite", "z": 25},
+        {"id": "banknotes", "role": "hero-cutout-group", "asset_kind": "generated-cutout-group", "motion": "accordion-unfold", "z": 35},
+        {"id": "ledger-lines", "role": "diagram", "asset_kind": "html-svg", "motion": "draw-in", "z": 45},
+        {"id": "date-labels", "role": "live-type", "asset_kind": "html-text", "motion": "stagger-rise", "z": 55}
+      ]
+    },
+    {
+      "id": "b03",
+      "duration": 5,
+      "purpose": "payoff",
+      "narration": "Today, money can move without taking any physical shape at all.",
+      "headline": "VALUE BECOMES DATA",
+      "visual_intent": "The paper system dissolves into a precise network while tactile collage texture remains.",
+      "transition": "final-fade",
+      "layers": [
+        {"id": "dark-paper-bg", "role": "background", "asset_kind": "generated-plate", "motion": "slow-drift", "z": 0},
+        {"id": "phone", "role": "hero-cutout", "asset_kind": "generated-cutout", "motion": "rise-tilt", "z": 25},
+        {"id": "data-nodes", "role": "diagram", "asset_kind": "html-svg", "motion": "network-trace", "z": 35},
+        {"id": "currency-scraps", "role": "supporting-cutout-group", "asset_kind": "generated-cutout-group", "motion": "scatter-settle", "z": 45},
+        {"id": "final-headline", "role": "live-type", "asset_kind": "html-text", "motion": "slam-in", "z": 60}
+      ]
+    }
+  ]
+}
