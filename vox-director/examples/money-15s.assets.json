@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "assets": [
+    {
+      "id": "b01-newsprint-bg",
+      "beat_id": "b01",
+      "layer_id": "newsprint-bg",
+      "role": "background",
+      "path": "video/media/images/b01-newsprint-bg.png",
+      "source": "codex-imagegen",
+      "prompt_file": "prompts/b01-newsprint-bg.txt",
+      "status": "planned",
+      "license_note": "AI generated for this project"
+    },
+    {
+      "id": "b01-cow",
+      "beat_id": "b01",
+      "layer_id": "cow",
+      "role": "hero-cutout",
+      "path": "video/media/images/b01-cow.png",
+      "source": "codex-imagegen",
+      "prompt_file": "prompts/b01-cow.txt",
+      "status": "planned",
+      "license_note": "AI generated for this project"
+    }
+  ]
+}
