@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vox Director"
+  short_description: "Create rich narrated paper-collage videos"
+  default_prompt: "Use $vox-director to turn my topic into a rich narrated paper-collage video."
